@@ -1,30 +1,35 @@
-
 public class CampbellClass{
 
-    public static String ConvertString(int word){
+
+
+    private CampbellClass(){
+
+    }
+    
+    public static String convertString(int word){
     return Integer.toString(word);
     }
     
-    public static String ConvertString(double word){
+    public static String convertString(double word){
         return Double.toString(word);
         }
     
-    public static String ConvertString(char word){
+    public static String convertString(char word){
         return Character.toString(word);
         }
     
-    public static String ConvertString(boolean word){
+    public static String convertString(boolean word){
         return Boolean.toString(word);
         }
     
     
-    public static int convertMetersToCenti(int inches){
-        inches = (int)(inches*2.54);
-        return inches;
+    public static int convertMetersToCenti(int meter){
+        int centimeter = (int)(meter*100);
+        return centimeter;
     }
     
-    public static double convertMetersToCenti(double inches){
-        return inches*2.54;
+    public static double convertMetersToCenti(double meter){
+        return meter*100;
     }
     
     
@@ -40,7 +45,7 @@ public class CampbellClass{
     
     
     public static String removeNonAlpha(String word, boolean upperLower){
-        String[] letters = word.split("[^!a-zA-Z]");
+        String[] letters = word.split("[^a-zA-Z]");
         String newWord = "";
         for(int i = 0; i<letters.length; i++){
     newWord +=letters[i];
