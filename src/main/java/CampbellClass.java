@@ -1,11 +1,15 @@
 /**
  * converts int, boolean, char, and double to string, convert meters to centimeter, remove non-letters from a string, and can convert said string to either upper or lower case depending. 
  * @author Simon shao
- * @version 1.0.0
+ * @version 1.0.1
  */
 
-public class CampbellClass{
+ //final class because we don't want it to be edited. 
+ //called upon using ClassName.Method(Parameter);
+public final class CampbellClass{
 
+    //constants:
+    //final static int MAXIMUM = 300;
 
 /** 
  * constructor that does nothing and is not accessable
