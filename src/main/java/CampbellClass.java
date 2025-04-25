@@ -60,8 +60,7 @@ public final class CampbellClass{
  * @return centimeter equivalence of given value
  */
     public static int convertMetersToCenti(int meter){
-        int centimeter = (int)(meter*100);
-        return centimeter;
+        return meter*100;
     }
 /**
  * convert meter to centimeter
@@ -69,7 +68,7 @@ public final class CampbellClass{
  * @return returns the centimeter equivalence of given value
  */
     public static double convertMetersToCenti(double meter){
-        return meter*100;
+        return meter*100.0;
     }
     
 /**
